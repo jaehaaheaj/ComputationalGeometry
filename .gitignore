@@ -1,5 +1,7 @@
-# save only source code
-
+# Blacklist everything
 *
+# Whitelist all directories
+!*/
+# Whitelist the file you're interested in : source codes 
 !*.cpp
 !*.h
