@@ -2,8 +2,10 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-	ofPoint pt1 = ofPoint(100, 250);
-	ofPoint pt2 = ofPoint(400, 250);
+	pt1 = ofPoint(100, 250);
+	pt2 = ofPoint(400, 250);
+	// white background
+	ofBackground(255, 255, 255);
 }
 
 //--------------------------------------------------------------
@@ -13,6 +15,8 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
+	// red line
+	ofSetColor(255, 0, 0);
 	ofLine(pt1.x, pt1.y, pt2.x, pt2.y);
 }
 
